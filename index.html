@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон ногтевого сервиса</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Салон ногтевого сервиса "Идеальные ногти"</h1>
+  </header>
+  <nav>
+    <div>Главная</div>
+    <div><a href="pages/manicure.html">Маникюр</a></div>
+    <div><a href="pages/pedicure.html">Педикюр</a></div>
+    <div><a href="pages/nail_extensions.html">Наращивание ногтей</a></div>
+    <div><a href="pages/nail_polish.html">Лакировка ногтей</a></div>
+    <div><a href="pages/price_list.html">Прайс-лист</a></div>
+</nav>
+  <main>
+  <section class="services">
+        <h2>Наши услуги:</h2>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="service" value="Маникюр" data-price="1200">
+              Маникюр - 1200 &#8381;
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="service" value="Маникюр" data-price="500">
+              Детский маникюр - 500 &#8381;
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="service" value="Педикюр" data-price="1300">
+              Педикюр - 1300 &#8381;
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="service" value="Наращивание ногтей" data-price="1500">
+              Наращивание ногтей - 1500 &#8381;
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="service" value="Лакировка ногтей" data-price="350">
+              Лакировка ногтей - 350 &#8381;
+            </label>
+          </li>
+        </ul>
+        <div class="total">
+          <span>Итого:</span>
+          <span class="total-price">0 &#8381;</span>
+        </div>
+      </section>
+      <section class="booking">
+        <h2>Записаться на прием</h2>
+        <form id="bookingForm">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" required>
+
+          <label for="service">Выберите услугу:</label>
+          <select id="service" required>
+            <option value="">-- Выбрать услугу --</option>
+            <option value="Маникюр">Маникюр</option>
+            <option value="Педикюр">Педикюр</option>
+            <option value="Наращивание ногтей">Наращивание ногтей</option>
+            <option value="Лакировка ногтей">Лакировка ногтей</option>
+          </select>
+
+          <label for="date">Выберите дату:</label>
+          <input type="date" id="date" required>
+
+          <label for="time">Выберите время:</label>
+          <input type="time" id="time" required>
+
+          <button type="submit">Записаться</button>
+        </form>
+      </section>
+  </main>
+
+  <footer>
+    <p>Контактный телефон: +7 (952) 583-5377</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
