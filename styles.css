@@ -5,7 +5,9 @@ body {
     margin: 0;
     padding: 0;
 /* Градиентный фон */
-    background-image: linear-gradient(to bottom right, #ffa43d, #eb7aa3);
+    background: linear-gradient(rgba(51, 117, 81, 0.5), rgba(216, 226, 221, 0.5)),
+    url(images/salon.jpeg);
+    background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -18,6 +20,7 @@ body {
   
   main {
     padding: 1rem;
+
   }
   
   nav {
@@ -42,11 +45,21 @@ body {
     border-bottom: 1px solid #ccc;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .booking {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
   }
   
   /* Стили для выравнивания заголовков по центру */
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    margin: 0px;
+    font-weight: 800;
   }
 
   ul {
